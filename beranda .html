@@ -1,0 +1,129 @@
+ <!doctype html>
+ 
+<html lang="en">
+  <head>
+  <script type="text/javascript">
+    window.setTimeout("waktu()",1000);
+    function waktu() {
+        var tanggal = new Date();
+        setTimeout("waktu()",1000);
+        document.getElementById("jam").innerHTML = tanggal.getHours();
+        document.getElementById("menit").innerHTML = tanggal.getMinutes();
+        document.getElementById("detik").innerHTML = tanggal.getSeconds();
+    }
+	</script>
+</head>
+
+<style>
+    #jam-digital{overflow:hidden; width:350px}
+    #hours{float:left; width:100px; height:50px; background-color:#6B9AB8; margin-right:25px}
+    #minute{float:left; width:100px; height:50px; background-color:#A5B1CB}
+    #second{float:right; width:100px; height:50px; background-color:#FF618A; margin-left:25px}
+    #jam-digital p{color:#000; font-size:36px; text-align:center; margin-top:4px}
+</style>
+
+<body onLoad="waktu()">
+    <div id="jam-digital">
+        <div id="hours"><p id="jam"></p></div>
+        <div id="minute"><p id="menit"></p></div>
+        <div id="second"><p id="detik"></p></div>
+    </div>
+</table>
+</body>
+
+  <style>
+		body{
+			background-image:url(gambar/bg%20ind.jpg); no-repeat scroll;
+background-size: 100% 100%;
+min-height: 700px;
+		}
+	
+	</style>
+    <meta charset="utf-8">
+    <title> Sistem Informasi Industri Tangerang</title>
+    <style>
+     * {margin:0; padding:0;}
+ 
+     body {
+	background-color:#fff;
+	font-family:Arial, Helvetica, sans-serif;
+	color:#FFF;
+     }
+ 
+     .menu-wrap {
+	background-color:#53bd84; 
+	height:50px; 
+	line-height:50px; 
+	position:!important;
+	width:620px;
+	margin:auto;
+	margin-top:80px;
+     }
+ 
+     .menu-wrap ul {
+	list-style:none;
+     }
+ 
+     .menu-wrap ul li a {
+ 	float:left; 
+	width:150px; 
+	display:block; 
+	text-align:center; 
+	color:#FFF; 
+	text-decoration:none; 
+	text-transform:uppercase;
+     }
+ 
+     .menu-wrap ul li a:hover {
+	background-color:#666; 
+	display:block;
+     }
+ 
+     .menu-wrap ul li:hover ul {
+	display:block;
+     }
+ 
+     .menu-wrap ul ul {
+	display:none; 
+	list-style:none; 
+	position:absolute; 
+	background-color:#53bd84;
+	left:300px; 
+	top:50px; 
+	width:190px;
+     }
+ 
+     .menu-wrap ul ul li a {
+	float:none; 
+	display:block; 
+	padding-left:30px; 
+	text-align:left; 
+	width:160px;
+     }
+ 
+     .menu-wrap ul ul li a:hover {
+	color:#fff;
+      }
+     </style>
+  </head>
+<body>
+  <div class="menu-wrap">
+	<ul>
+    	<li><a href="beranda .html">Beranda</a></li>
+        <li><a href="sub program/PROFIL INDUSTRI/Beranda Profil Industri .html">PROFIL IDUSTRI</li>
+        <li><a href="sub program/GALERI/gALERI.html">GALERI</a></li>
+        <li> <a href="sub program/Tentang penulis/beranda tentang penulis.html">TENTANG KAMI</a></li>
+	</ul>
+  </div>
+  <br>
+  <br>
+  <div align="center">
+  <video controls autoplay loop>
+<source  src="video.mp4" type="video/mp4"/ >
+</video>
+  </div>
+</body>
+<br>
+<br>
+
+</html>
